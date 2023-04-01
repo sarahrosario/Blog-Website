@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hi there! My name is Sarah, and I'm the creator of this blog. Currently live in Portland Maine.</p>
+
+         <p>I am on a self-taught journey to become a full stack developer. I am also passionate about painting, and I started this blog to share my knowledge and experiences with others who share my interests.
+          
+          I hope to inspire and motivate others through the content that I share on this blog.</p>
+          
+          <p>Thank you for taking the time to visit my blog and learn a little bit more about me. I'm excited to share my journey with you and learn from all of you as well!</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
