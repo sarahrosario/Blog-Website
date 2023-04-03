@@ -26,8 +26,9 @@ gravatar = Gravatar(app,
                     use_ssl=False,
                     base_url=None)
 
-##CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+##CONNECT TO DB (updated database from local to external using postgresql, add 2nd argument incase we need to run locally using sqlite)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', "sqlite:///blog.db")
+# postgresql://blog_21gc_user:zndnMdE4I0lvQIRhQNe7xnLwZUZlmzpN@dpg-cglhtnrh4hskd41osccg-a.oregon-postgres.render.com/blog_21gc
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

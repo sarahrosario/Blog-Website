@@ -8,3 +8,4 @@ flask_wtf==1.1.1
 SQLAlchemy==2.0.8
 Werkzeug==2.2.3
 WTForms==3.0.1
+psycopg2-binary==2.9.6
